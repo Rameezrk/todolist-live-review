@@ -6,6 +6,8 @@ require('dotenv').config()
 
 //TEST COMMENT
 
+//ANOTHER COMMENT
+
 let db,
     dbConnectionStr = process.env.DB_STRING,
     dbName = 'todo'
@@ -70,7 +72,7 @@ app.delete('/deleteTodo', (req, res)=>{
     })
     .catch( err => console.log(err))
 })
- 
+
 app.listen(process.env.PORT || PORT, ()=>{
     console.log('Server is running, you better catch it!')
-})    
+})
